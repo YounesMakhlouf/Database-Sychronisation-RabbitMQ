@@ -10,6 +10,17 @@ public class Product {
     private final double tax;
     private final double total;
 
+    public Product(Date date, String region, String product, int qty, double cost, double amount, double tax, double total) {
+        this.date = date;
+        this.region = region;
+        this.product = product;
+        this.qty = qty;
+        this.cost = cost;
+        this.amount = amount;
+        this.tax = tax;
+        this.total = total;
+    }
+
     public Date getDate() {
         return date;
     }
@@ -40,17 +51,6 @@ public class Product {
 
     public double getTotal() {
         return total;
-    }
-
-    public Product(Date date, String region, String product, int qty, double cost, double amount, double tax, double total) {
-        this.date = date;
-        this.region = region;
-        this.product = product;
-        this.qty = qty;
-        this.cost = cost;
-        this.amount = amount;
-        this.tax = tax;
-        this.total = total;
     }
 
     @Override
