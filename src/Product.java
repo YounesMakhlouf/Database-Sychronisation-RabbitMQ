@@ -1,7 +1,7 @@
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Product {
-    private final Date date;
+    private final LocalDate date;
     private final String region;
     private final String product;
     private final int qty;
@@ -10,7 +10,7 @@ public class Product {
     private final double tax;
     private final double total;
 
-    public Product(Date date, String region, String product, int qty, double cost, double amount, double tax, double total) {
+    public Product(LocalDate date, String region, String product, int qty, double cost, double amount, double tax, double total) {
         this.date = date;
         this.region = region;
         this.product = product;
@@ -21,7 +21,7 @@ public class Product {
         this.total = total;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
@@ -55,6 +55,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" + "date=" + date + ", region='" + region + '\'' + ", product='" + product + '\'' + ", qty=" + qty + ", cost=" + cost + ", amount=" + amount + ", tax=" + tax + ", total=" + total + '}';
+        return String.format("Product{date=%s, region='%s', product='%s', qty=%d, cost=%.2f, amount=%.2f, tax=%.2f, total=%.2f}", date, region, product, qty, cost, amount, tax, total);
     }
 }

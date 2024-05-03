@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="sales@localhost">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.51">
-    <root id="1">
-      <DefaultCasing>lower/lower</DefaultCasing>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <Grants>feedback|schema||sqluser|localhost|ALTER|G
-feedback|schema||sqluser|localhost|ALTER ROUTINE|G
-feedback|schema||sqluser|localhost|CREATE|G
-feedback|schema||sqluser|localhost|CREATE ROUTINE|G
-feedback|schema||sqluser|localhost|CREATE TEMPORARY TABLES|G
-feedback|schema||sqluser|localhost|CREATE VIEW|G
-feedback|schema||sqluser|localhost|DELETE|G
-feedback|schema||sqluser|localhost|DELETE HISTORY|G
-feedback|schema||sqluser|localhost|DROP|G
-feedback|schema||sqluser|localhost|EVENT|G
-feedback|schema||sqluser|localhost|EXECUTE|G
-feedback|schema||sqluser|localhost|INDEX|G
-feedback|schema||sqluser|localhost|INSERT|G
-feedback|schema||sqluser|localhost|LOCK TABLES|G
-feedback|schema||sqluser|localhost|REFERENCES|G
-feedback|schema||sqluser|localhost|SELECT|G
-feedback|schema||sqluser|localhost|SHOW VIEW|G
-feedback|schema||sqluser|localhost|TRIGGER|G
-feedback|schema||sqluser|localhost|UPDATE|G
-sales|schema||sqluser|localhost|ALTER|G
-sales|schema||sqluser|localhost|ALTER ROUTINE|G
-sales|schema||sqluser|localhost|CREATE|G
-sales|schema||sqluser|localhost|CREATE ROUTINE|G
-sales|schema||sqluser|localhost|CREATE TEMPORARY TABLES|G
-sales|schema||sqluser|localhost|CREATE VIEW|G
-sales|schema||sqluser|localhost|DELETE|G
-sales|schema||sqluser|localhost|DELETE HISTORY|G
-sales|schema||sqluser|localhost|DROP|G
-sales|schema||sqluser|localhost|EVENT|G
-sales|schema||sqluser|localhost|EXECUTE|G
-sales|schema||sqluser|localhost|INDEX|G
-sales|schema||sqluser|localhost|INSERT|G
-sales|schema||sqluser|localhost|LOCK TABLES|G
-sales|schema||sqluser|localhost|REFERENCES|G
-sales|schema||sqluser|localhost|SELECT|G
-sales|schema||sqluser|localhost|SHOW VIEW|G
-sales|schema||sqluser|localhost|TRIGGER|G
-sales|schema||sqluser|localhost|UPDATE|G</Grants>
-      <ServerVersion>10.4.27</ServerVersion>
-    </root>
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.52">
+    <root id="1"/>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
