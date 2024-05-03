@@ -1,21 +1,16 @@
 package BO;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Collectors;
 
 public class SqlConfig {
     public static String getScript() throws IOException {
-        StringBuilder scriptContent = new StringBuilder();
-        String line;
-        BufferedReader reader = new BufferedReader(new FileReader("product_sales_changes.sql"));
-        while ((line = reader.readLine()) != null) {
-            scriptContent.append(line).append("\n");
+        try (var lines = Files.lines(Paths.get("product_sales_changes.sql"))) {
+            return lines.collect(Collectors.joining("\n"));
+        } catch (IOException e) {
+            throw new IOException("Failed to read SQL script file.", e);
         }
-        reader.close();
-
-        return scriptContent.toString();
-
-
     }
 }
