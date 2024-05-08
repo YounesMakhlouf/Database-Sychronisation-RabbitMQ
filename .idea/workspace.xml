@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6319e7e5-638e-4a3b-981c-1a501c705515" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/19b50224-e4a2-43ff-aa71-446186376c03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19b50224-e4a2-43ff-aa71-446186376c03.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19b50224-e4a2-43ff-aa71-446186376c03/storage_v2/_src_/schema/feedback.heuV9A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19b50224-e4a2-43ff-aa71-446186376c03/storage_v2/_src_/schema/feedback.heuV9A.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_query.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database_Synchronisation-RabbitMQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Database_Synchronisation-RabbitMQ.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product_sales_changes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/product_sales_changes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BO/ExportChangesToScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO/ExportChangesToScript.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BO/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO/RabbitmqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BO/SqlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO/SqlConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HO/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HO/RabbitmqConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +30,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;YounesMakhlouf&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YounesMakhlouf/Database-Sychronisation-RabbitMQ.git&quot;,
+    &quot;accountId&quot;: &quot;3040fa74-9732-4f00-801d-41c099f72d25&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,8 +61,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BOGUI.executor": "Run",
     "Application.ExportChangesToScript.executor": "Run",
+    "Application.HO.RabbitmqConfig.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MainApp.executor": "Run",
     "Application.RabbitmqConfig.executor": "Run",
     "Database Script.sql_scripts.sql.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -65,13 +77,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/wawao/OneDrive/Bureau/Database_Synchronisation-RabbitMQ/product_sales_changes.sql",
+    "last_opened_file_path": "C:/Users/wawao/Downloads/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/bin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -91,11 +103,39 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="ExportChangesToScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BO.ExportChangesToScript" />
+      <module name="Database_Synchronisation-RabbitMQ" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Database_Synchronisation-RabbitMQ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BO.RabbitmqConfig" />
+      <module name="Database_Synchronisation-RabbitMQ" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,6 +148,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RabbitmqConfig" />
+        <item itemvalue="Application.ExportChangesToScript" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -131,7 +173,15 @@
       <workItem from="1711716938498" duration="923000" />
       <workItem from="1711717881202" duration="86000" />
       <workItem from="1711731637545" duration="6119000" />
-      <workItem from="1714755820537" duration="11110000" />
+      <workItem from="1714755820537" duration="13269000" />
+      <workItem from="1714811937722" duration="297000" />
+      <workItem from="1714845509094" duration="1890000" />
+      <workItem from="1715078493400" duration="52000" />
+      <workItem from="1715078752768" duration="2305000" />
+      <workItem from="1715115854149" duration="115000" />
+      <workItem from="1715158877861" duration="224000" />
+      <workItem from="1715160925203" duration="455000" />
+      <workItem from="1715161403742" duration="1364000" />
     </task>
     <servers />
   </component>
@@ -148,17 +198,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HO/RabbitmqConfig.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Database_Synchronisation_RabbitMQ$Main.ic" NAME="Main Coverage Results" MODIFIED="1711717840671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

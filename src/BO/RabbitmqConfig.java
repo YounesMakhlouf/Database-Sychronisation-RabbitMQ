@@ -13,12 +13,16 @@ public class RabbitmqConfig {
     private final static String EXCHANGE_NAME = "bo_exchange";
     private final static String ROUTING_KEY = "bo";
 
-    public static void main(String[] args) {
+    public static void main(String[] argv) {
+        if (argv.length != 1) {
+            System.out.println("Usage: BO Number <bo" + "_number>");
+            System.exit(1);
+        }
+        int boNumber = Integer.parseInt(argv[0]);
+        ExportChangesToScript.exportProductSalesChangesToScript(boNumber);
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         try (Connection connection = factory.newConnection(); Channel channel = connection.createChannel()) {
-            // channel.queueDeclare(QUEUE_NAME, true, false, false, null);
-            // channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, ROUTING_KEY);
             channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT, true);
             channel.basicPublish(EXCHANGE_NAME, ROUTING_KEY, null, SqlConfig.getScript().getBytes());
             System.out.println(SqlConfig.getScript());
