@@ -74,7 +74,7 @@ BEGIN
                    NEW.product, '\', quantity = ', NEW.quantity, ', cost = ', NEW.cost, ', amount = ', NEW.amount,
                    ', tax = ', NEW.tax, ', total = ', NEW.total, ' WHERE date = \'', OLD.date, '\' AND region = \'',
                    OLD.region, '\' AND product = \'', OLD.product, '\';');
-    CALL capture_product_sales_changes(sql_stmt);
+    CALL capture_changes(sql_stmt);
 END$$
 DELIMITER ;
 
@@ -87,7 +87,7 @@ BEGIN
     DECLARE sql_stmt VARCHAR(2000);
     SET sql_stmt = CONCAT('DELETE FROM product_sales WHERE date = \'', OLD.date, '\' AND region = \'', OLD.region,
                           '\' AND product = \'', OLD.product, '\';');
-    CALL capture_product_sales_changes(sql_stmt);
+    CALL capture_changes(sql_stmt);
 END$$
 DELIMITER ;
 

@@ -15,7 +15,7 @@ public class RabbitmqConfig {
     private final static String EXCHANGE_NAME = "bo_exchange";
     private final static String ROUTING_KEY = "bo";
 
-    public static void main(String[] args) throws Exception {
+    public static void updateHo() throws Exception {
 
         // Establish MySQL connection
         Connection dbConnection = MySQLConnection.connect("HO");

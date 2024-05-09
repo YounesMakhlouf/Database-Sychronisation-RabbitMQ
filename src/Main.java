@@ -1,12 +1,11 @@
-import java.time.LocalDate;
-import java.util.ArrayList;
-
 public class Main {
-    public static void main(String[] args) {
-        Product kotkot = new Product(LocalDate.of(1000, 9, 19), "East", "Kotou", 1, 19.0, 19.0, 19.0, 19.0);
-        ProductCRUD.add(kotkot, "sales");
-        ArrayList<Product> products = ProductCRUD.getAll("sales");
-
-        products.forEach(System.out::println);
+    public static void main(String[] argv) throws Exception {
+        if (argv.length != 1) {
+            System.out.println("Usage: BO Number <bo" + "_number>");
+            System.exit(1);
+        }
+        int boNumber = Integer.parseInt(argv[0]);
+        BO.RabbitmqConfig.sendChanges(boNumber);
+        HO.RabbitmqConfig.updateHo();
     }
 }

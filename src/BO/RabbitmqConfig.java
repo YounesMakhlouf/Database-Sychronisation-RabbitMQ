@@ -9,16 +9,10 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 public class RabbitmqConfig {
-    private final static String QUEUE_NAME = "bo_queue";
     private final static String EXCHANGE_NAME = "bo_exchange";
     private final static String ROUTING_KEY = "bo";
 
-    public static void main(String[] argv) {
-        if (argv.length != 1) {
-            System.out.println("Usage: BO Number <bo" + "_number>");
-            System.exit(1);
-        }
-        int boNumber = Integer.parseInt(argv[0]);
+    public static void sendChanges(int boNumber) {
         ExportChangesToScript.exportProductSalesChangesToScript(boNumber);
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");

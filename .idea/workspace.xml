@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6319e7e5-638e-4a3b-981c-1a501c705515" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19b50224-e4a2-43ff-aa71-446186376c03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19b50224-e4a2-43ff-aa71-446186376c03.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database_Synchronisation-RabbitMQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Database_Synchronisation-RabbitMQ.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product_sales_changes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/product_sales_changes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BO/ExportChangesToScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO/ExportChangesToScript.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BO/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO/RabbitmqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HO/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HO/RabbitmqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductCRUD.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +68,7 @@
     "Application.Main.executor": "Run",
     "Application.MainApp.executor": "Run",
     "Application.RabbitmqConfig.executor": "Run",
+    "Application.synchronize.executor": "Run",
     "Database Script.sql_scripts.sql.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -83,7 +85,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -102,7 +104,7 @@
       <recent name="C:\Users\Lenovo\Desktop\Database-Sychronisation-RabbitMQ\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.synchronize">
     <configuration name="ExportChangesToScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BO.ExportChangesToScript" />
       <module name="Database_Synchronisation-RabbitMQ" />
@@ -140,17 +142,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="synchronize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="synchronize" />
+      <module name="Database_Synchronisation-RabbitMQ" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sql_scripts.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/sql_scripts.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="19b50224-e4a2-43ff-aa71-446186376c03" namespace="schema/&quot;sales&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.ExportChangesToScript" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.RabbitmqConfig" />
+      <item itemvalue="Application.synchronize" />
+      <item itemvalue="Database Script.sql_scripts.sql" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.synchronize" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RabbitmqConfig" />
         <item itemvalue="Application.ExportChangesToScript" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +199,8 @@
       <workItem from="1715115854149" duration="115000" />
       <workItem from="1715158877861" duration="224000" />
       <workItem from="1715160925203" duration="455000" />
-      <workItem from="1715161403742" duration="1364000" />
+      <workItem from="1715161403742" duration="5244000" />
+      <workItem from="1715239136305" duration="381000" />
     </task>
     <servers />
   </component>
